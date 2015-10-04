@@ -1,0 +1,16 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0; }
+
+form input:required {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAANElEQVQYV2NkIBIwEqmOYSAV/mdg+A+0nxGdRnc72I0gRTAJkCZsHgSbhEU3hmLSTCTGjQATWRILGfBMGwAAAABJRU5ErkJggg==) right top no-repeat; }
+form legend {
+	margin-bottom: 0.2em; }
+
+@media (max-width: 767px) {
+	.form-group > div {
+		margin-bottom: 0.5em; }
+
+	.form-group {
+		margin-bottom: 0; } }

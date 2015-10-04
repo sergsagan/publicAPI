@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FE-Course. Part 3 | Registration form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+<header class="container">
+	<h1 class="text-center">Registration form</h1>
+</header>
+<section class="container">
+	<form name="registration" class="form-horizontal" data-toggle="validator">
+		<div class="form-group required">
+			<legend class="col-sm-12">Registration info</legend>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="username" placeholder="Full Name" required>
+			</div>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="phone" placeholder="Phone" required>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-6">
+				<input type="email" class="form-control" id="email" placeholder="Email" required>
+			</div>
+			<div class="col-sm-6">
+				<input type="email" class="form-control" id="email2" placeholder="Confirm Email" required>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-6">
+				<input type="password" class="form-control" id="password" placeholder="Password" required>
+			</div>
+			<div class="col-sm-6">
+				<input type="password" class="form-control" id="password2" placeholder="Confirm Password" required>
+			</div>
+		</div>
+		<fieldset>
+			<legend>Address</legend>
+			<div class="form-group">
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="city" placeholder="City" required>
+				</div>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="zip" placeholder="ZIP Code">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-5">
+					<select class="form-control" id="state" name="state">
+						<option value="_none">Select State</option>
+						<option value="value1">State 1</option>
+						<option value="value2">State 2</option>
+						<option value="value3">State 3</option>
+					</select>
+				</div>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" id="street" placeholder="Street">
+				</div>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="building" placeholder="Building">
+				</div>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Your Hobbies</legend>
+			<div class="form-group">
+				<div class="checkbox col-sm-3">
+					<label>
+						<input type="checkbox"> Music
+					</label>
+				</div>
+				<div class="checkbox col-sm-3">
+					<label>
+						<input type="checkbox"> Cycling
+					</label>
+				</div>
+				<div class="checkbox col-sm-3">
+					<label>
+						<input type="checkbox"> Front End
+					</label>
+				</div>
+				<div class="checkbox col-sm-3">
+					<label>
+						<input type="checkbox"> Girls
+					</label>
+				</div>
+			</div>
+		</fieldset>
+		<div class="form-group">
+			<div class="col-sm-12">
+				<legend>How did you hear about us?</legend>
+				<select class="form-control" id="about">
+					<option value="_none">Select Please</option>
+					<option value="value1">Google</option>
+					<option value="value2">Friends</option>
+					<option value="value3">Newspapers</option>
+				</select>
+			</div>
+		</div>
+		<button class="btn btn-primary btn-lg center-block" type="submit">Register Profile</button>
+	</form>
+</section>
+<script src="jquery-2.1.4.min.js"></script>
+</body>
+</html>
